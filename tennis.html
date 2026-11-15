@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网球场 · 卡网高超技巧 — 杜玉</title>
+  <meta name="description" content="杜玉的网球主场 —— 展示卡网高超技巧。">
+  <meta name="theme-color" content="#0b0c0e">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="night-overlay" aria-hidden="true"></div>
+  <div class="zzz-layer" aria-hidden="true">
+    <span style="--x:6vw;--d:0s;--dur:9s">Z</span>
+    <span style="--x:22vw;--d:1.4s;--dur:11s">z</span>
+    <span style="--x:38vw;--d:2.8s;--dur:8s">Z</span>
+    <span style="--x:52vw;--d:0.7s;--dur:12s">z</span>
+    <span style="--x:66vw;--d:3.6s;--dur:9.5s">Z</span>
+    <span style="--x:80vw;--d:2s;--dur:10.5s">z</span>
+    <span style="--x:91vw;--d:4.4s;--dur:8.5s">Z</span>
+  </div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__mark">杜玉</span>
+        <span class="nav__tag">DY</span>
+      </a>
+      <nav class="nav__links" aria-label="主导航">
+        <a href="index.html#about">关于我</a>
+        <a href="tennis.html" aria-current="page">网球场</a>
+        <a href="index.html#contact">联系我</a>
+      </nav>
+      <button class="nav__sleep" id="sleepToggle" type="button" aria-pressed="false" title="睡眠模式">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+        <span class="nav__sleep-text">睡眠模式</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 球场 HERO ============ -->
+    <section class="hero court-hero">
+      <div class="container court-hero__grid">
+        <div class="hero__copy">
+          <p class="hero__eyebrow reveal"><span class="dot" aria-hidden="true"></span>TENNIS · 网球场</p>
+          <h1 class="hero__title hero__title--court reveal">卡网<br>高超技巧<span class="hero__dot">.</span></h1>
+          <p class="hero__line reveal">
+            球场上的我。照片、视频和技巧说明都留好了位置 —— 用真实素材来填。
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="index.html#contact">想找我过两招 →</a>
+            <a class="btn btn--ghost" href="index.html">← 回首页</a>
+          </div>
+        </div>
+
+        <div class="court-art reveal" aria-hidden="true">
+          <svg class="court-art__svg" viewBox="0 0 480 300" fill="none">
+            <!-- 球场线 -->
+            <rect x="20" y="30" width="440" height="240" rx="6" stroke="rgba(201,255,62,0.35)" stroke-width="2"/>
+            <rect x="60" y="70" width="360" height="160" rx="4" stroke="rgba(201,255,62,0.22)" stroke-width="1.5"/>
+            <line x1="240" y1="70" x2="240" y2="230" stroke="rgba(201,255,62,0.22)" stroke-width="1.5"/>
+            <!-- 球网 -->
+            <line x1="240" y1="30" x2="240" y2="270" stroke="rgba(242,244,238,0.5)" stroke-width="2.5" stroke-dasharray="7 6"/>
+            <circle cx="240" cy="30" r="5" fill="rgba(242,244,238,0.5)"/>
+            <circle cx="240" cy="270" r="5" fill="rgba(242,244,238,0.5)"/>
+          </svg>
+          <span class="court-art__ball"></span>
+          <p class="court-art__tag">COURT · 卡网领域</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 素材位 ============ -->
+    <!-- ▼▼▼ 要放真实素材时：把照片/视频放进 assets/ 文件夹，然后把对应 .media-slot
+         整块替换成 <img src="assets/你的文件.jpg" alt="说明"> 或 <video>。 ▼▼▼ -->
+    <section class="section" id="media">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">GALLERY · 素材位</p>
+          <h2 class="section__title">现场照片 &amp; 视频。</h2>
+          <p class="section__desc">四个空位等真实素材。放进来之前，这里是空的 —— 我不放网图凑数。</p>
+        </header>
+
+        <div class="media-slots">
+          <figure class="media-slot reveal"><span class="media-slot__num">01</span><figcaption>素材位 · 待放入照片或视频</figcaption></figure>
+          <figure class="media-slot reveal"><span class="media-slot__num">02</span><figcaption>素材位 · 待放入照片或视频</figcaption></figure>
+          <figure class="media-slot reveal"><span class="media-slot__num">03</span><figcaption>素材位 · 待放入照片或视频</figcaption></figure>
+          <figure class="media-slot reveal"><span class="media-slot__num">04</span><figcaption>素材位 · 待放入照片或视频</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <!-- ▲▲▲ 素材位结束 ▲▲▲ -->
+
+    <!-- ============ 技巧位 ============ -->
+    <!-- ▼▼▼ 要填技巧时：把“［待填写］”换成真实技巧名称和说明，没有的卡片整张删掉。 ▼▼▼ -->
+    <section class="section section--alt" id="tech">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">TECHNIQUE · 技巧位</p>
+          <h2 class="section__title">卡网高超技巧，<br>一条条拆给你看。</h2>
+          <p class="section__desc">技巧名称和说明留白待填。真实内容由我补充，绝不虚构。</p>
+        </header>
+
+        <div class="tech-grid">
+          <article class="tech-card reveal">
+            <p class="tech-card__num">技巧 01</p>
+            <h3 class="tech-card__name">［待填写：技巧名称］</h3>
+            <p class="tech-card__text">［待填写：一两句说明这个技巧怎么用、什么时候用。］</p>
+          </article>
+          <article class="tech-card reveal">
+            <p class="tech-card__num">技巧 02</p>
+            <h3 class="tech-card__name">［待填写：技巧名称］</h3>
+            <p class="tech-card__text">［待填写：一两句说明这个技巧怎么用、什么时候用。］</p>
+          </article>
+          <article class="tech-card reveal">
+            <p class="tech-card__num">技巧 03</p>
+            <h3 class="tech-card__name">［待填写：技巧名称］</h3>
+            <p class="tech-card__text">［待填写：一两句说明这个技巧怎么用、什么时候用。］</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ▲▲▲ 技巧位结束 ▲▲▲ -->
+
+    <!-- ============ CTA ============ -->
+    <section class="section">
+      <div class="container cta-band reveal">
+        <h2 class="cta-band__title">想切磋卡网技巧？<br>或者只是想找人双排？</h2>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="index.html#contact">联系我 →</a>
+          <a class="btn btn--ghost" href="index.html#about">再认识我一下</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> 杜玉 · 纯手工 HTML/CSS/JS · 无追踪、无密钥</p>
+      <a class="footer__top" href="#main">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>杜玉 · 深夜主场</title>
+  <meta name="description" content="杜玉的个人网站 —— 潍坊理工学院数据科学与大数据技术大二。睡觉、魔芋爽、第五人格双排，以及网球卡网高超技巧。">
+  <meta name="theme-color" content="#0b0c0e">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="night-overlay" aria-hidden="true"></div>
+  <div class="zzz-layer" aria-hidden="true">
+    <span style="--x:6vw;--d:0s;--dur:9s">Z</span>
+    <span style="--x:22vw;--d:1.4s;--dur:11s">z</span>
+    <span style="--x:38vw;--d:2.8s;--dur:8s">Z</span>
+    <span style="--x:52vw;--d:0.7s;--dur:12s">z</span>
+    <span style="--x:66vw;--d:3.6s;--dur:9.5s">Z</span>
+    <span style="--x:80vw;--d:2s;--dur:10.5s">z</span>
+    <span style="--x:91vw;--d:4.4s;--dur:8.5s">Z</span>
+  </div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__mark">杜玉</span>
+        <span class="nav__tag">DY</span>
+      </a>
+      <nav class="nav__links" aria-label="主导航">
+        <a href="index.html#about">关于我</a>
+        <a href="tennis.html">网球场</a>
+        <a href="index.html#contact">联系我</a>
+      </nav>
+      <button class="nav__sleep" id="sleepToggle" type="button" aria-pressed="false" title="睡眠模式">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+        <span class="nav__sleep-text">睡眠模式</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__eyebrow reveal"><span class="dot" aria-hidden="true"></span>DATA SCIENCE · 潍坊理工学院 · 大二</p>
+          <h1 class="hero__title reveal" aria-label="杜玉">
+            <span class="hero__char">杜</span><span class="hero__char">玉</span><span class="hero__dot">.</span>
+          </h1>
+          <p class="hero__line reveal">
+            我喜欢<button type="button" class="chip js-spicy">睡觉</button>、吃<button type="button" class="chip chip--spicy js-spicy">魔芋爽</button>，以及和朋友<button type="button" class="chip js-spicy">双排玩第五人格</button>。
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#about">认识我 ↓</a>
+            <a class="btn btn--ghost" href="tennis.html">看我的卡网技巧 →</a>
+          </div>
+          <p class="hero__scroll reveal" aria-hidden="true">SCROLL ↓</p>
+        </div>
+
+        <aside class="code-card reveal" aria-hidden="true">
+          <div class="code-card__bar">
+            <span class="code-card__dots"><i></i><i></i><i></i></span>
+            <em>duyu.js</em>
+          </div>
+          <pre class="code-card__body"><code><span class="tk-kw">const</span> <span class="tk-var">duyu</span> <span class="tk-op">=</span> {
+  <span class="tk-key">name</span>:   <span class="tk-str">"杜玉"</span>,
+  <span class="tk-key">school</span>: <span class="tk-str">"潍坊理工学院"</span>,
+  <span class="tk-key">major</span>:  <span class="tk-str">"数据科学与大数据技术"</span>,
+  <span class="tk-key">year</span>:   <span class="tk-str">"大二"</span>,
+  <span class="tk-key">likes</span>:  [<span class="tk-str">"睡觉"</span>, <span class="tk-str">"魔芋爽"</span>, <span class="tk-str">"第五人格双排"</span>],
+  <span class="tk-key">skill</span>:  <span class="tk-str">"网球卡网高超技巧"</span>,
+  <span class="tk-key">status</span>: <span class="tk-str" id="statusText">"睡觉中 zzz"</span>
+};</code></pre>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">睡觉</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">吃魔芋爽</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">第五人格双排</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">网球卡网高超技巧</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">数据科学与大数据技术</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">潍坊理工学院</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">睡觉</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">吃魔芋爽</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">第五人格双排</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">网球卡网高超技巧</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">数据科学与大数据技术</span><span class="marquee__sep">✳</span>
+        <span class="marquee__item">潍坊理工学院</span><span class="marquee__sep">✳</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">ABOUT · 关于我</p>
+          <h2 class="section__title">白天上课，晚上睡觉。<br>也可能反过来。</h2>
+          <p class="section__desc">
+            我是杜玉，潍坊理工学院 数据科学与大数据技术 专业大二在读。三件事撑起了我的日常：
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+              </svg>
+            </div>
+            <h3 class="card__title">睡觉</h3>
+            <p class="card__text">头等大事。睡够了，世界都顺眼。</p>
+          </article>
+
+          <article class="card card--spicy reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2c1.2 3-.8 4.2-.8 6.2 0 1.6 1 2.6 2 2.6s2.2-.9 2.2-2.6c1.8 1.9 2.6 3.9 2.6 5.8a6 6 0 1 1-12 0c0-3.6 2.6-5.6 2.6-8 0-2 1.2-4 3.4-4z"/>
+              </svg>
+            </div>
+            <h3 class="card__title">魔芋爽</h3>
+            <p class="card__text">辣、爽、停不下来。点一下试试。</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="11" rx="5.5"/>
+                <path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/>
+              </svg>
+            </div>
+            <h3 class="card__title">第五人格双排</h3>
+            <p class="card__text">和朋友开黑，快乐直接翻倍。</p>
+          </article>
+        </div>
+
+        <ul class="stats reveal">
+          <li class="stat"><span class="stat__value">∞</span><span class="stat__label">睡眠时长</span></li>
+          <li class="stat"><span class="stat__value">辣度拉满</span><span class="stat__label">魔芋爽</span></li>
+          <li class="stat"><span class="stat__value">双排常驻</span><span class="stat__label">第五人格</span></li>
+          <li class="stat"><span class="stat__value">卡网高超</span><span class="stat__label">网球技巧</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 占位区：只放真实内容 ============ -->
+    <!-- ▼▼▼ 要填写真实内容时：把下面 .slot 里的“待填写”文字换成真实经历/作品/奖项；
+         没有的卡片请整张删掉，不要编造。也可以把整段 <section id="future"> 删掉。 ▼▼▼ -->
+    <section class="section section--alt" id="future">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">PLACEHOLDERS · 占位区</p>
+          <h2 class="section__title">留给未来的我。</h2>
+          <p class="section__desc">经历、作品、奖项 —— 这里只放真实内容。没有就空着，我不编。</p>
+        </header>
+
+        <div class="slots">
+          <article class="slot reveal">
+            <p class="slot__tag">01 / EXPERIENCE</p>
+            <h3 class="slot__title">经历</h3>
+            <p class="slot__hint">［待填写］把真实经历写在这里，没有就删掉这张卡片。</p>
+          </article>
+          <article class="slot reveal">
+            <p class="slot__tag">02 / WORKS</p>
+            <h3 class="slot__title">作品</h3>
+            <p class="slot__hint">［待填写］把真实作品写在这里，没有就删掉这张卡片。</p>
+          </article>
+          <article class="slot reveal">
+            <p class="slot__tag">03 / AWARDS</p>
+            <h3 class="slot__title">奖项</h3>
+            <p class="slot__hint">［待填写］把真实奖项写在这里，没有就删掉这张卡片。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ▲▲▲ 占位区结束 ▲▲▲ -->
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label">CONTACT · 联系方式</p>
+          <h2 class="section__title">来聊聊？</h2>
+          <p class="section__desc">两条路，都能找到我：邮箱和 GitHub。</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact-card reveal">
+            <p class="contact-card__label">EMAIL / 邮箱</p>
+            <a class="contact-card__value" href="mailto:3069718646@qq.com">3069718646@qq.com</a>
+            <div class="contact-card__actions">
+              <button class="btn btn--small btn--primary" id="copyEmail" type="button" data-email="3069718646@qq.com">复制邮箱</button>
+              <a class="btn btn--small btn--ghost" href="mailto:3069718646@qq.com">发邮件 ↗</a>
+            </div>
+          </div>
+
+          <a class="contact-card reveal" href="https://github.com/duyu-001/mywebsite" target="_blank" rel="noopener noreferrer">
+            <p class="contact-card__label">GITHUB</p>
+            <span class="contact-card__value">github.com/duyu-001/mywebsite</span>
+            <span class="contact-card__actions"><span class="btn btn--small btn--ghost">打开主页 ↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> 杜玉 · 纯手工 HTML/CSS/JS · 无追踪、无密钥</p>
+      <a class="footer__top" href="#main">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
